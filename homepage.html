@@ -1,12 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <title>Bestsellers-Plumgoodness</title>
+    <style>
+        .topnav{
+            margin-left: 500px;
+            margin-top:10px;       
+        }
+        #io{
+            border-radius: 20px;
+            border:2px solid indigo;
+            padding:15px;
+        }
+        #category{
+            height: 100%;
+            width: 20%;
+            padding: 30px;
+        }
+        #filter{
+            height: 55%;
+            width: 105%;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #filter>h4{
+            line-height: 0px;
+            padding-left: 20px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        hr{
+            width: 80%;
+            margin: auto;
+            color: gray;
+        }
+        #cont{
+            height: 100%;
+            width: 78%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        #cont>div{
+            margin-left: 2%;
+            height: 400px;
+            width: 280px;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 15px;
+        }
+        img{
+    height: 100%;
+    width: 100%;
+}
+#cont>div>img{
+    height: 40%;
+    width: 60%;
+    padding-top: 0px;
+    padding-left: 70px;
+}
+button{
+    background-color: #5e0d8b;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 50px;
+    border: 0px;
+    border-radius: 5px;
+    width: 160px;
+}
+        
+    </style>
 </head>
 <body>
-    
+    <div style="background-color: indigo; width:98%;height:10px;color:white;text-align: center;padding:8px; font-size: 15px">
+        BESTSELLING Green Tea Acne Control At JUST 999
+    </div>
+
+    <div style="display: flex; height: 80px;">
+        <div style="height: 100%;margin-left: 100px;margin-top: 30px;margin-right: 20px;">
+            <i style="color: indigo" class="fas fa-align-justify"></i>
+        </div>
+      
+    <div style="width:10%;height:90%;margin-top:10px;">
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_skin_hair_maekup.png?v=1628248101" width=100% height=30% alt="">
+    </div>
+        
+    <div style="width:8%;height:90%;margin-left: 30px;margin-top:10px">
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_bodylovin.png?v=1628248113" width=100% height=100% alt="">
+    </div>
+
+    <div class="topnav" style="margin-top: 30px;">
+        <i class="fas fa-search"></i>
+        <input type="text" id="io" placeholder="Search.." style="height: 10%;" >
+    </div>
+
+      <div style="margin-top:35px; height: 30px; padding-left: 30px;">
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/wishlist_icon.svg?v=1620044145" width="80px" height="200px" alt="">
+      </div>
+      <div style="margin-top:35px; height: 30px; padding-left: 30px;">
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/cart_icon.svg?v=1620044145" width="80px" height="30px" alt="">
+      </div>
+</div>
+
+<h1 style="width: 30%;height: 70px;margin: auto; color: #5e0c8c; font-size: 60px; text-align: center;margin-top: 30px;">bestsellers</h1>
+
+<div id="bestseller_box" style="height: 100%; width: 100%;background-color:#ebe0f0;margin-top: 20px; display: flex;">
+    <div id="category">
+            <label>SORT BY:</label>
+            <select style="padding: 10px; font-weight: bold; border-radius: 10px;">
+                <option value="">Recommended</option>
+                <option value="">Plumster Favourite</option>
+                <option value="">New launches</option>
+                <option value="">Price:High to Low</option>
+                <option value="">Price:Low to High</option>
+            </select>
+            <div id="filter">
+                <h2 style="text-align: center; color: gray;">Filter</h2>
+                <hr>
+                <h4>CATEGORY</h4>
+                <hr>
+                <h4>CONCERN</h4>
+                <hr>
+                <h4>PRODUCT FORMAT</h4>
+                <hr>
+                <h4>PRICE</h4>
+                <hr>
+                <h4>DISCOUNT</h4>
+                <hr>
+                <h4>ACTIVE INGREDIENTS</h4>
+                <hr>
+                <h4>SKIN TYPE/HAIR TYPE</h4>
+                <hr>
+                <h4>AVG. CUSTOMER RATINGS</h4>
+                <hr>
+                <h4>TYPE</h4>
+                <hr>
+                <h4>PREFERENCE</h4>
+                <hr>
+                <h4>FRAGRANCE</h4>
+                <hr>
+
+            </div>
+    </div>
+
+    <div id="cont">
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px; line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+            
+        </div>
+        <div>
+            <img src="img/Glow.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Get the Glow On Combo | Fights Acne | Reduces Hyperpigmentation & Dark Spots | 100% Vegan</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1365.00</i>
+                <i class="fas fa-rupee-sign">1228.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/kajal.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Eye-Swear-By Kohl Kajal Combo | Set of 2 | Deep Black | Creamy Smooth | Smudge-Proof</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">550.00</i>
+                <i class="fas fa-rupee-sign">495.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div>
+            <img src="img/green.jpeg" alt="">
+            <div style="text-align:center;color: indigo; display: flex; padding-left: 40px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p style="color: black;">209 reviews</p>
+            </div>
+            <p style="padding:0px 15px;line-height: 15px; font-family: 'Courier New', Courier, monospace;">Green Tea Acne-Control Kit - Limited Edition | For Clear Skin Overnight | Free 'Olive It' Pouch</p>
+            <div style="background-color: indigo; height: 2px;width: 100px;margin: auto;"></div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 15px;font-size: 17px;margin-bottom: 15px;">
+                <i style="text-decoration: line-through;color: gray;" class="fas fa-rupee-sign">1310.00</i>
+                <i class="fas fa-rupee-sign">999.00</i>
+            </div>
+            <button>add to cart</button>
+        </div>
+
+        
+    </div>
+</div>
+
 </body>
 </html>
