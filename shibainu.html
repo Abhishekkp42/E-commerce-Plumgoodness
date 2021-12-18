@@ -8,13 +8,28 @@
 </head>
 <style>
     .topnav{
-        margin-left: 600px;
+        margin-left: 550px;
         margin-top:10px;       
     }
     #io{
         border-radius: 20px;
         border:5px solid purple;
         padding:15px;
+    }
+    .conone{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,250px);
+        grid-gap:25px;
+        
+    }
+    .conone>div{
+           /* border:1px solid red; */
+           border-radius: 15px;
+    }
+    .conone>div:nth-child(5)
+    {
+        grid-area: 2/2/3/4;
     }
 </style>
 <body>
@@ -24,10 +39,10 @@
 
     <div style="display: flex;">
       
-    <div style="width:7%;height:50px;margin-top:10px">
+    <div style="width:8%;height:60px;margin-top:10px">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_skin_hair_maekup.png?v=1628248101" width=100% height=100% alt="">
         </div>
-        <div style="width:7%;height:50px;margin-left: 30px;margin-top:10px">
+        <div style="width:8%;height:60px;margin-left: 30px;margin-top:10px">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_bodylovin.png?v=1628248113" width=100% height=100% alt="">
 
     </div>
@@ -43,11 +58,28 @@
 
 </div>
 
-    <div style="margin-top: 20px;">
+    <div style="margin-top: 29px;">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/IMC-mock-slider-desktop_61b657f0-61d0-457f-807b-caa30bfa448f.jpg?v=1631077043" width="100%" height="400px" alt="">
     </div>
     <div style="color:mediumvioletred;text-align: center;font-size: 30px;">
         <h1>pick a plum</h1>
+    </div>
+    <div class="conone">
+       <div>
+           <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/HP-Desktop_bath-_-body_Tiles_370-240_400x.jpg?v=1638940364" width="100%" height="100%" alt="">
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0257/8766/2417/files/about-plum.jpg?v=1576755876" width="100%" height="100%" alt="">
+       </div>
+       <div>
+        <img src="https://www.makeupandbeautyforever.com/wp-content/uploads/2021/06/Plum-Goodness-Shower-Creams-HD-MBF-Blog-922x692.jpg" width="100%" height="100%" alt="">
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Drivinmecherry-04_1024x1024.jpg?v=1630926599" width="100%" height="100%" alt="">
+       </div>
+       <div>
+           <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/GT-Full-Set_HP-Banner_V2.jpg?v=1638254856" width="100%" height="100%" border-radius="10px" alt="">
+       </div>
     </div>
 </body>
 </html>
