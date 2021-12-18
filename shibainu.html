@@ -5,10 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
 <style>
+    .fa-facebook {
+  background: #3B5998;
+  color: white;
+  width:50px;
+  height:40px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width:50px;
+  height:40px;
+  border-radius: 50%;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  width:50px;
+  height:40px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width:50px;
+  height:40px;
+  border-radius: 50%;
+}
+
+    .last{
+        width:100%;
+        height:300px;
+        background-color:#fff7ec;
+        margin-top: 80px;
+        display:grid;
+        grid-template-rows: 200px;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap:20px;
+    }
+   
+    .last>div:nth-child(4)
+    {
+        grid-area: 1/4/2/7;
+    }
+    .last>div:nth-child(4)
+    {
+        height:300px;
+    }
     .topnav{
-        margin-left: 600px;
+        margin-left: 400px;
         margin-top:10px;       
     }
     #io{
@@ -16,6 +68,51 @@
         border:5px solid purple;
         padding:15px;
     }
+    .conone{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,300px);
+        grid-gap:25px;
+        
+    }
+    .conone>div{
+           /* border:1px solid red; */
+           border-radius: 15px;
+    }
+    .conone>div:nth-child(5)
+    {
+        grid-area: 2/2/3/4;
+    }
+    .onone{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 500px;
+        grid-gap:25px;
+    }
+    .onone>div{
+        /* border:1px solid red; */
+        background-color: white;
+    }
+    .bott{
+        background-color: mistyrose;
+        height:750px;
+    }
+    .bot{
+       
+        width:90%;
+        height:600px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:30px;
+        margin:auto
+    }
+    .bot>div{
+        /* border:1px solid red; */
+        margin-top: 40px;
+        height:400px;
+        border-radius: 5px;
+    }
+ 
 </style>
 <body>
     <div style="background-color: purple;width:100%;height:30px;color:white;text-align: center;padding:10px">
@@ -23,16 +120,18 @@
     </div>
 
     <div style="display: flex;">
-      
-    <div style="width:7%;height:50px;margin-top:10px">
+      <div style="width:4%;height:30px;margin-top:20px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIh2umai0wzDLthQ4FinJUHLYXGV60Yr-tg&usqp=CAU" width=100% height=100% alt="">
+      </div>
+    <div style="width:8%;height:60px;margin-top:10px;margin-left: 70px;">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_skin_hair_maekup.png?v=1628248101" width=100% height=100% alt="">
         </div>
-        <div style="width:7%;height:50px;margin-left: 30px;margin-top:10px">
+        <div style="width:8%;height:60px;margin-left: 30px;margin-top:10px">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_bodylovin.png?v=1628248113" width=100% height=100% alt="">
 
     </div>
     <div class="topnav">
-        <input type="text" id="io" placeholder="Search..">
+        <input type="text" id="io" placeholder="Search">
       </div>
       <div style="margin-top:15px">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/wishlist_icon.svg?v=1620044145" width="100px" height="40px" alt="">
@@ -43,11 +142,195 @@
 
 </div>
 
-    <div style="margin-top: 20px;">
+    <div style="margin-top: 29px;" id="topimage">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/IMC-mock-slider-desktop_61b657f0-61d0-457f-807b-caa30bfa448f.jpg?v=1631077043" width="100%" height="400px" alt="">
     </div>
     <div style="color:mediumvioletred;text-align: center;font-size: 30px;">
         <h1>pick a plum</h1>
     </div>
+    <div class="conone">
+       <div>
+           <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/HP-Desktop_bath-_-body_Tiles_370-240_400x.jpg?v=1638940364" width="100%" height="100%" alt="">
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0257/8766/2417/files/about-plum.jpg?v=1576755876" width="100%" height="100%" alt="">
+       </div>
+       <div>
+        <img src="https://www.makeupandbeautyforever.com/wp-content/uploads/2021/06/Plum-Goodness-Shower-Creams-HD-MBF-Blog-922x692.jpg" width="100%" height="100%" alt="">
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Drivinmecherry-04_1024x1024.jpg?v=1630926599" width="100%" height="100%" alt="">
+       </div>
+       <div>
+           <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/GT-Full-Set_HP-Banner_V2.jpg?v=1638254856" width="100%" height="100%" border-radius="10px" alt="">
+       </div>
+    </div>
+    <div style="background-color:thistle;width:100%;height:800px;margin-top:70px">
+           <div style="text-align: center;color:mediumvioletred;font-weight: bold;font-size:30px;padding-top:20px">
+               <h1>best sellers</h1>
+               <div class="onone">
+                <div>
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/40216902_1-plum-body-lovin-shower-gel-hawaiian-rumba.jpg" width="80%" height="50%" alt="">
+                    <div style="text-align: center;">
+                        <p style="font-size:20px;color:black">Plum BodyLovin Drivin me cherry show</p>
+                        <div style="width:80px;height:3px;background-color:mediumvioletred;margin-left:35%"></div>
+                       <div>
+                        <p style="font-size:20px;color:black">Rs 299</p> 
+                       </div>
+                        <div >
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+       <button style="background-color:mediumvioletred;padding:10px 30px;color:white;border-radius: 10px;font-weight:bold">Add to Cart</button>
+                    </div>
+                 
+                </div>
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/61ojNly8lhL._SY355_.jpg" width="80%" height="50%" alt="">
+                    <div style="text-align: center;">
+                        <p style="font-size:20px;color:black">Plum BodyLovin Drivin me cherry show</p>
+                        <div style="width:80px;height:3px;background-color:mediumvioletred;margin-left:35%"></div>
+                       <div>
+                        <p style="font-size:20px;color:black">Rs 299</p> 
+                       </div>
+                        <div >
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+       <button style="background-color:mediumvioletred;padding:10px 30px;color:white;border-radius: 10px;font-weight:bold">Add to Cart</button>
+                    </div>
+                 
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqYe95OhtVoJCBEPwgtv4aN8EAi694L9xOQ&usqp=CAU" width="80%" height="50%" alt="">
+                    <div style="text-align: center;">
+                        <p style="font-size:20px;color:black">Plum BodyLovin Drivin me cherry show</p>
+                        <div style="width:80px;height:3px;background-color:mediumvioletred;margin-left:35%"></div>
+                       <div>
+                        <p style="font-size:20px;color:black">Rs 299</p> 
+                       </div>
+                        <div >
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+       <button style="background-color:mediumvioletred;padding:10px 30px;color:white;border-radius: 10px;font-weight:bold">Add to Cart</button>
+                    </div>
+                 
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/oopsiedaisy1_1024x1024.jpg?v=1630927380" width="80%" height="50%" alt="">
+                    <div style="text-align: center;">
+                        <p style="font-size:20px;color:black">Plum BodyLovin Drivin me cherry show</p>
+                        <div style="width:80px;height:3px;background-color:mediumvioletred;margin-left:35%"></div>
+                       <div>
+                        <p style="font-size:20px;color:black">Rs 299</p> 
+                       </div>
+                        <div >
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+       <button style="background-color:mediumvioletred;padding:10px 30px;color:white;border-radius: 10px;font-weight:bold">Add to Cart</button>
+                    </div>
+                 
+                </div>
+             </div>
+             <div style="margin-top:40px">
+                <button style="color:mediumvioletred;padding:15px 50px;background-color:white;border-radius: 10px;font-weight:bold;font-size:20px;border:0">view more</button>
+             </div>
+           </div>
+    </div>
+
+
+    <div style="width:100%;height:400px">
+        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/brand-film-1920x675.jpg?v=1629809004" width="100%" height="100%" alt="">
+    </div>
+<div class="bott">
+    <div class="bot">
+         <div>
+             <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/Tile_1_2e2d5023-e840-44a0-b5f6-c4d50973e16f_340x.png?v=1629697153" width="100%" height="100%"   alt="">
+         </div>
+         <div>
+            <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/Tile_2_5f33ac4b-b510-4fdf-8ecb-f290def28c7c_340x.png?v=1629697153" width="100%" height="100%"   alt="">
+         </div>
+         <div>
+            <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/Tile_3_46edbc21-7e6c-48cf-a0f3-42cb3db740e9_340x.png?v=1629697153" width="100%" height="100%"   alt="">
+         </div>
+    </div>
+    <div style="margin-left:45%">
+        <button style="color:mediumvioletred;padding:15px 50px;background-color:white;border-radius: 10px;font-weight:bold;font-size:20px;border:0">#clean good ></button>
+     </div>
+</div>
+<div class="last">
+  <div style="line-height: 10px;">
+      <p style="font-weight: bold;">shop</p>
+      <p>skincare</p>
+      <p>haircare</p>
+      <p>bodycare</p>
+  </div>
+  <div style="line-height: 10px;">
+    <p style="font-weight: bold;">learn</p>
+    <p>Plum Blogs</p>
+    <p>Plum features</p>
+    <p>Plum rewards</p>
+  </div>
+  <div style="line-height: 10px;">
+    <p style="font-weight: bold;">help</p>
+    <p>careers</p>
+    <p>contact us</p>
+    <p>FAQS</p>
+</div>
+  <div style="display: flex;">
+      <div style="width:30%">
+      </div>
+      <div style="width:70%;font-size:25px;text-align: center;">
+        <p style="font-weight: bold;">For exclusive offers and beauty tips add email.We hate spam</p>
+        <button style="background-color:white;padding:10px;padding-right:90px;color:black;border-radius:5px;border:2px solid #5b0c8b;">enter email adress</button>
+        <button style="background-color:indigo;padding:10px;color:white;border-radius:5px;border:0">subscribe</button>
+        <div style="margin-top: 20px;">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<p style="font-size: 20px;font-weight: bold;">hello@plumgoodness.com</p>
+        </div>
+    </div>
+  
+      </div>
+  </div>
+</div>
+<div style="background-color: thistle;width:100%;height:80px;text-align: center;padding:20px">
+    <p>2021,Plum All right reserved </p>
+    <p>Privacy Policy|Terms of service</p>
+    
+
+</div>
 </body>
 </html>
+
+<script>
+    document.querySelector("#topimage").addEventListener("click",ioi);
+    function ioi()
+    {
+        window.location.href="akitainu.html";
+    }
+</script>
