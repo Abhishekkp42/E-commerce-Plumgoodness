@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     .fa-facebook {
@@ -115,32 +116,49 @@
  
 </style>
 <body>
-    <div style="background-color: purple;width:100%;height:30px;color:white;text-align: center;padding:10px">
-        BESTSELLING Green Tea Acne control at 999
-    </div>
-
-    <div style="display: flex;">
-      <div style="width:4%;height:30px;margin-top:20px">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIh2umai0wzDLthQ4FinJUHLYXGV60Yr-tg&usqp=CAU" width=100% height=100% alt="">
-      </div>
-    <div style="width:8%;height:60px;margin-top:10px;margin-left: 70px;">
-        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_skin_hair_maekup.png?v=1628248101" width=100% height=100% alt="">
+    <header>
+        <div class="header-slid">BESTSELLING Green Tea Acne Control Kit at JUST 999</div>
+        <nav>
+            <div id="left-nav">
+                <button onclick="menuT()"><i class="fas fa-bars"></i></button>
+                <h1 class="header-logo">      
+                    <a class="logo-img left active" href="/" title="Logo">
+                      <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_skin_hair_maekup.png">
+                    </a>
+                    
+                    <a class="logo-img right" href="shibainu.html" title="Logo" style="border-color:#e8e7e7;">
+                      <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_bodylovin.png" >
+                    </a>                   
+                  </h1>
+            </div>  
+            <div id="right-nav">
+                <input type="text" name="s" placeholder="Search..." value="" autocapitalize="off" autocomplete="off" autocorrect="off" id="search">
+                <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/seach_icon.svg" alt="" id="msearch">
+                <a class="iWishView" title="Wishlist" href="/apps/iwish"><img src="https://cdn.shopify.com/s/files/1/0390/2985/files/wishlist_icon.svg?v=1620044145"></a>
+                <a href="#" title="Cart Icon" data-cart-toggle="">       
+                    <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/cart_icon.svg?v=1620044145" >
+                    <span class="count" id="cart">0</span>
+                  </a>
+            </div>         
+        </nav>
+        <div id="clickSerach">
+          <input type="text" name="s" placeholder="Search..." value="" autocapitalize="off" autocomplete="off" autocorrect="off" id="search" class="hsc">
         </div>
-        <div style="width:8%;height:60px;margin-left: 30px;margin-top:10px">
-        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_bodylovin.png?v=1628248113" width=100% height=100% alt="">
-
+    </header>
+    <div id="menuc">
+        <div style="display: flex;"><a href="signup_part.html">login / register</a><button id="close" onclick="menuT()"><i class="fas fa-times"></i></button></div>
+        <ul id="menulist">
+            <li>skin</li>
+            <li>hair </li>
+            <li>body</li>
+            <li>makeup</li>
+            <li>collections</li>
+            <li>about plum</li>
+            <li>help </li>
+            <li>offer</li>
+            <li>plum blogs</li>
+        </ul>
     </div>
-    <div class="topnav">
-        <input type="text" id="io" placeholder="Search">
-      </div>
-      <div style="margin-top:15px">
-        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/wishlist_icon.svg?v=1620044145" width="100px" height="40px" alt="">
-      </div>
-      <div style="margin-top:15px">
-        <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/cart_icon.svg?v=1620044145" width="100px" height="40px" alt="">
-      </div>
-
-</div>
 
     <div style="margin-top: 29px;" id="topimage">
         <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/IMC-mock-slider-desktop_61b657f0-61d0-457f-807b-caa30bfa448f.jpg?v=1631077043" width="100%" height="400px" alt="">
@@ -325,6 +343,20 @@
 
 </div>
 </body>
+<script>
+    var flage=true;
+    function menuT(){
+console.log(flage)
+if(flage)
+{
+  document.querySelector("#menuc").style.display="block";
+  flage=false;
+}else{
+  document.querySelector("#menuc").style.display="none";
+  flage=true;
+}
+}
+  </script>
 </html>
 
 <script>

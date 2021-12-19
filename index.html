@@ -17,23 +17,24 @@
         <div class="header-slid">BESTSELLING Green Tea Acne Control Kit at JUST 999</div>
         <nav>
             <div id="left-nav">
-                <button><i class="fas fa-bars"></i></button>
+                <button onclick="menuT()"><i class="fas fa-bars"></i></button>
                 <h1 class="header-logo">      
                     <a class="logo-img left active" href="/" title="Logo">
                       <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_skin_hair_maekup.png">
                     </a>
                     
-                    <a class="logo-img right" href="https://bit.ly/3kcqP4p" title="Logo" style="border-color:#e8e7e7;">
+                    <a class="logo-img right" href="shibainu.html" title="Logo" style="border-color:#e8e7e7;">
                       <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/20210806_plum_bodylovin.png" >
                     </a>                   
                   </h1>
-            </div>   
+            </div>  
             <div id="right-nav">
                 <input type="text" name="s" placeholder="Search..." value="" autocapitalize="off" autocomplete="off" autocorrect="off" id="search">
                 <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/seach_icon.svg" alt="" id="msearch">
                 <a class="iWishView" title="Wishlist" href="/apps/iwish"><img src="https://cdn.shopify.com/s/files/1/0390/2985/files/wishlist_icon.svg?v=1620044145"></a>
                 <a href="#" title="Cart Icon" data-cart-toggle="">       
                     <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/cart_icon.svg?v=1620044145" >
+                    <span class="count" id="cart">0</span>
                   </a>
             </div>         
         </nav>
@@ -41,6 +42,20 @@
           <input type="text" name="s" placeholder="Search..." value="" autocapitalize="off" autocomplete="off" autocorrect="off" id="search" class="hsc">
         </div>
     </header>
+    <div id="menuc">
+        <div style="display: flex;"><a href="signup_part.html">login / register</a><button id="close" onclick="menuT()"><i class="fas fa-times"></i></button></div>
+        <ul id="menulist">
+            <li>skin</li>
+            <li>hair </li>
+            <li>body</li>
+            <li>makeup</li>
+            <li>collections</li>
+            <li>about plum</li>
+            <li>help </li>
+            <li>offer</li>
+            <li>plum blogs</li>
+        </ul>
+    </div>
     <main>
       <div class="slider" id="f1">
         <div class="round left-button">
@@ -62,97 +77,123 @@
       </div>
       <div class="bestseller" style="background: url(//cdn.shopify.com/s/files/1/0390/2985/files/bestsellers_BG_5178572b-64e9-4dd1-aef8-15a83f4f332d.jpg?v=1620197136);background-size: cover;padding: 1%;text-align: center;">
         <h1 class="tag-line">BESTSELLER</h1>
-        <div class="p-container">
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-            <button>add to cart</button>
-          </div>
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-            <button>add to cart</button>
-          </div>
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-            <button>add to cart</button>
-          </div>
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <h3><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h3>
-            <button>add to cart</button>
-          </div>
+        <div class="p-container " id="best-seller">
         </div>
-        <button class="view-more">view more</button>
+        <button class="view-more" onclick="window.open('homepage.html')">view more</button>
       </div>
       <div class="bestseller" style="background: url(https://cdn.shopify.com/s/files/1/0390/2985/files/What_s_new_BG.jpg);background-size: cover;padding: 1%;text-align: center;">
         <h1 class="tag-line">what's new</h1>
+        <div class="p-container" id="whatsnew">
+        </div>
+        <button class="view-more" onclick="window.open('homepage.html')">view more</button>
+      </div>
+      <div class="bestseller" style="background: white;background-size: cover;padding: 1%;text-align: center;">
+        <h1 class="tag-line">watch & buy</h1>
+        <div class="p-container " id="video-grid">
+
+          
+        </div>
+        <br>
+      </div>
+      <div class="bestseller" style="background: #d9c4e3;background-size: cover;padding: 1%;text-align: center;padding-top: 40px;">
+        <div class="p-container ">
+          <div class="cardi" style="background: url(https://cdn.shopify.com/s/files/1/0390/2985/files/beauty-min-update_340x.png);"><h1>clean</h1></div>
+          <div class="cardi" style="background: url(https://cdn.shopify.com/s/files/1/0390/2985/files/real-min-update_340x.png);"><h1>real</h1></div>
+          <div class="cardi" style="background: url(https://cdn.shopify.com/s/files/1/0390/2985/files/clean-min-update_340x.png);"><h1>good</h1></div>
+        </div>
+        <button class="view-more" onclick="window.open('homepage.html')">#cleanrealgood</button>
+      </div>
+      <div class="bestseller" style="background: white;background-size: cover;padding: 1%;text-align: center;padding-top: 40px;">
         <div class="p-container">
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-            <button>add to cart</button>
+          <div class="comment">
+            <div > We love the fact that these formulations are vegan, cruelty-free & paraben-free </div>
+            <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/1_24950cd6-ac9b-45fc-9b50-92b1a904e9a8_200x.png" alt="">
           </div>
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-            <button>add to cart</button>
+          <div class="comment">
+            <div >  Your hair needs a boost & there's no better candidate that the Plum Mega Moisturizing Hair Mask  </div>
+            <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/6_17ac2b85-481c-4198-a4bf-cfa053a6d6e7_200x.jpg" alt="">
           </div>
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <p><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-            <button>add to cart</button>
-          </div>
-          <div class="p-card">
-            <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/Shampoo_Front_400x.jpg" alt="">
-            <h2>
-              Tea Tree Dandruff Control Shampoo
-            </h2>
-            <hr>
-            <p>$ 550</p>
-            <h3><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h3>
-            <button>add to cart</button>
+          <div class="comment">
+            <div >   This clay-based face mask has AHAs to exfoliate and Green Tea to heal and prevent acne   </div>
+            <img src="https://cdn.shopify.com/s/files/1/0390/2985/files/2_f1e3b604-b098-49e6-9ca0-c3a094732227_200x.png" alt="">
           </div>
         </div>
-        <button class="view-more">view more</button>
+        <button class="view-more" style="background: #5e0d8b;color: white;">view more</button>
       </div>
     </main>
+    <footer>
+      <div id="upperFooter">
+        <div id="leftFooter">
+          <div class="footOne">
+            <h3>shop</h3>
+            <ul>
+              <li>
+                <a href="/collections/skincare" title="Skincare" class="foot-link">Skincare</a>
+              </li>            
+              <li>
+                <a href="/collections/hair-care" title="Haircare" class="foot-link">Haircare</a>
+              </li>
+              <li><a href="/collections/plum-bodylovin" title="Bodycare" class="foot-link">Bodycare</a>
+              </li>
+              <li><a href="/collections/makeup" title="Makeup" class="foot-link">Makeup</a>
+              </li>
+            </ul>    
+          </div> 
+          <div class="footTwo">
+            <h3>learn</h3>
+            <ul>
+              <li>
+                <a href="https://plumgoodness.com/pages/blog" title="Plum blogs" class="foot-link">Plum blogs</a>
+              </li>
+              <li>
+                <a href="/pages/plum-feature" title="Plum features" class="foot-link">Plum features</a>
+              </li>
+              <li>
+                <a href="/pages/plum-rewards" title="Plum rewards" class="foot-link">Plum rewards</a>
+              </li>
+            </ul>          
+          </div>
+          <div class="footThree">
+            <h3>help</h3>
+            <ul>
+              <li>
+                <a href="https://careers.teampureplay.com/jobs/Careers" title="Careers" class="foot-link">Careers</a>
+              </li>
+              <li>
+                <a href="/pages/contact-us" title="Contact us" class="foot-link">Contact us</a>
+              </li>
+              <li>
+                <a href="/pages/faqs" title="FAQs" class="foot-link">FAQs</a>
+              </li>
+              <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRXnjPXULppVswH04C7q6hqZLDtabRa6dZZCX8hTxzuqnDDw/viewform" title="Empties4Good" class="foot-link">Empties4Good</a>
+              </li>            
+            </ul>          
+          </div>
+        </div>
+        <div id="rightFooter">
+  
+        </div>
+      </div>
+      <div id="lowerFooter">
+        <h2>© 2021,Plum. All rights reserved.
+          Privacy policy Terms of Service</h2>
+      </div>
+    </footer>
+    <script>
+      var flage=true;
+      function menuT(){
+  console.log(flage)
+  if(flage)
+  {
+    document.querySelector("#menuc").style.display="block";
+    flage=false;
+  }else{
+    document.querySelector("#menuc").style.display="none";
+    flage=true;
+  }
+}
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
