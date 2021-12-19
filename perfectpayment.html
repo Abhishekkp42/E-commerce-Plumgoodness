@@ -338,6 +338,9 @@
             width: 100%;
             
         }
+        #green{
+            color: green;
+        }
 
 </style>
 <body>
@@ -365,7 +368,7 @@
 
     <div class="paymentfull">
 
-        <!-- lefttttttttttttttttt -->
+        <!-- leftdivision -->
         <div class="leftdiv">
             <div class="firstdiv">
                 <div class="contact">
@@ -499,8 +502,8 @@
                 <button id="completeorder">Complete Order</button>
             </div>
         </div>
-        <!-- .leftenddddddddddddddd -->
-        <!-- rightttttttttt -->
+        <!-- .leftdivisionend -->
+        <!-- rightdivision start -->
         <div class="rightdiv">
             <div class="rfirstdiv">
                 <h4>Hey plumster! Do not forget to sign up or log in to earn and redeem your reward points.
@@ -516,15 +519,15 @@
                     </tr>
                 </table>
             </div>
-            <div class="rthirddiv">
-                <input type="text" placeholder="Discount code">
-                <button>Apply</button>
+            <div class="rthirddiv "  id="a">
+                <input type="text" id="codediscount" placeholder="Discount code">
+                <button id="apply">Apply</button>
             </div>
             <div class="rfourthdiv">
                 <table id="fourthtable">
                     <tr>
                         <td>Subtotal</td>
-                        <td class="right">₹998.00 </td>
+                        <td class="right">₹299.00 </td>
                     </tr>
                     <tr>
                         <td>Shipping</td>
@@ -536,11 +539,11 @@
                 <table id="fifthtable">
                     <tr>
                         <td>Total</td>
-                        <td class="right">INR ₹998.00 </td>
+                        <td class="right" id="discountprice">INR ₹299.00 </td>
                     </tr>
                     <tr>
                         <td>
-                            Including ₹152.24 in taxes
+                            Including ₹15.24 in taxes
                         </td>
                     </tr>
                 </table>
@@ -558,4 +561,30 @@
     function order(){
         window.location.href="order.html" 
     }
+    
+    var para=document.createElement("p");
+        para.textContent="Discount applied Succesfully";
+        document.querySelector("#apply").addEventListener("click",apply)
+    function apply()
+    {
+        var code=document.getElementById("codediscount").value;
+        if(code=="plum30")
+        {
+            var para=document.createElement("p");
+            para.textContent="discount code succesfull";
+            para.setAttribute("id","green")
+            document.getElementById("a").append(para);
+           var pri= document.getElementById("discountprice");
+           pri.textContent=Number(299-30);
+            
+        }
+        else{
+            var para=document.createElement("p");
+            para.textContent="discount code wrong";
+            para.setAttribute("id","green")
+            document.getElementById("a").append(para);
+            
+        }
+    }
+    
 </script>
